@@ -56,7 +56,11 @@ function innledning() {
     const txt22 = new Blocks.Text("Hei, jeg heter Even. Og jeg heter Tyra, og vi er 5 år. Vi skal på eventyr. På veien vil vi få ulike spørsmål som jeg og Even trenger hjelp til å løse. Når utfordringen er gjennomført, får vi lov til å gå videre til neste stasjon. Lykke til!!", { style: "tekst", x: 10, y: 10, width: 500, height: 800 });
     const img23 = new Blocks.Image("bilder/evenogtyra.jpg", { x: 50, y: 90, width: 250, height: 200 });
     const sound24 = new Blocks.Sound("lyder/innledning.m4a", { loop: false, auto: false });
-    sound24.start();
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound24.start();
+    })
+    
 }
 
 
@@ -71,12 +75,11 @@ function oppgave1() {
     const img9 = new Blocks.Image("bilder/hatt.png", { x: 300, y: 50, width: 100, height: 100 });
     const sound1 = new Blocks.Sound("lyder/sporsmal1.m4a", { loop: false, auto: false });
 
-    sound1.start();
-
-
-    Actions.Click(txt6, () => {
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
         sound1.start();
     })
+
 
     Actions.Click(img7, () => {
         //spill av applaus lyd
@@ -116,10 +119,10 @@ function oppgave2() {
     const img5 = new Blocks.Image("bilder/ro.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const sound6 = new Blocks.Sound("lyder/sporsmal2.m4a", { loop: false, auto: false });
 
-    sound6.start();
-    Actions.Click(txt2, () =>
-        sound6.start()
-    )
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound6.start();
+    })
 
 
     Actions.Click(img3, () => {
@@ -157,10 +160,11 @@ function oppgave3() {
     const img9 = new Blocks.Image("bilder/bro.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const img10 = new Blocks.Image("bilder/do.jpg", { x: 320, y: 150, width: 100, height: 100 });
     const sound11 = new Blocks.Sound("lyder/sporsmal3.m4a", { loop: false, auto: false });
-    sound11.start();
+   
 
-    Actions.Click(txt7, () => {
-        sound11.start()
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound11.start();
     })
 
 
@@ -200,9 +204,10 @@ function oppgave4() {
     const img9 = new Blocks.Image("bilder/sand.jpg", { x: 200, y: 150, width: 100, height: 100 });
     const img10 = new Blocks.Image("bilder/brannmann.jpg", { x: 320, y: 150, width: 100, height: 100 });
     const sound11 = new Blocks.Sound("lyder/sporsmal4.m4a", { loop: false, auto: false });
-    sound11.start();
-    Actions.Click(txt7, () => {
-        sound11.start()
+    
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound11.start();
     })
 
 
@@ -239,9 +244,10 @@ function oppgave5() {
     const img8 = new Blocks.Image("bilder/spise.jpg", { x: 200, y: 150, width: 100, height: 100 });
     const img9 = new Blocks.Image("bilder/grise.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const sound11 = new Blocks.Sound("lyder/sporsmal5.m4a", { loop: false, auto: false });
-    sound11.start();
-    Actions.Click(txt7, () => {
-        sound11.start()
+    
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound11.start();
     })
 
 
@@ -273,9 +279,10 @@ function oppgave6() {
     const img9 = new Blocks.Image("bilder/orn.jpg", { x: 200, y: 150, width: 100, height: 100 });
     const img12 = new Blocks.Image("bilder/flodhest.jpg", { x: 320, y: 150, width: 100, height: 100 });
     const sound13 = new Blocks.Sound("lyder/sporsmal6.m4a", { loop: false, auto: false });
-    sound13.start();
-    Actions.Click(txt7, () => {
-        sound13.start()
+    
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound13.start();
     })
 
 
@@ -314,9 +321,10 @@ function oppgave7() {
     const img9 = new Blocks.Image("bilder/rod.jpg", { x: 200, y: 150, width: 100, height: 100 });
     const img12 = new Blocks.Image("bilder/brod.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const sound13 = new Blocks.Sound("lyder/sporsmal7.m4a", { loop: false, auto: false });
-    sound13.start();
-    Actions.Click(txt7, () => {
-        sound13.start()
+   
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound13.start();
     })
 
 
@@ -355,9 +363,10 @@ function oppgave8() {
     const img9 = new Blocks.Image("bilder/sekken.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const img12 = new Blocks.Image("bilder/bekken.jpg", { x: 320, y: 150, width: 100, height: 100 });
     const sound13 = new Blocks.Sound("lyder/sporsmal8.m4a", { loop: false, auto: false });
-    sound13.start();
-    Actions.Click(txt7, () => {
-        sound13.start()
+   
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound13.start();
     })
 
 
@@ -396,9 +405,9 @@ function oppgave9() {
     const img12 = new Blocks.Image("bilder/gule.jpg", { x: 320, y: 150, width: 100, height: 100 });
     const sound13 = new Blocks.Sound("lyder/sporsmal9.m4a", { loop: false, auto: false });
 
-    sound13.start();
-    Actions.Click(txt7, () => {
-        sound13.start()
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound13.start();
     })
 
 
@@ -435,9 +444,9 @@ function oppgave10() {
     const img8 = new Blocks.Image("bilder/troll.jpg", { x: 80, y: 150, width: 100, height: 120 });
     const img9 = new Blocks.Image("bilder/skjold.jpg", { x: 200, y: 150, width: 100, height: 120 });
     const sound13 = new Blocks.Sound("lyder/sporsmal10.m4a", { loop: false, auto: false });
-    sound13.start();
-    Actions.Click(txt7, () => {
-        sound13.start()
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound13.start();
     })
 
 
@@ -468,9 +477,9 @@ function oppgave11() {
     const img8 = new Blocks.Image("bilder/venner.jpg", { x: 200, y: 150, width: 110, height: 100 });
     const img9 = new Blocks.Image("bilder/tenner.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const sound13 = new Blocks.Sound("lyder/sporsmal11.m4a", { loop: false, auto: false });
-    sound13.start();
-    Actions.Click(txt7, () => {
-        sound13.start()
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound13.start();
     })
 
 
@@ -501,9 +510,9 @@ function oppgave12() {
     const img8 = new Blocks.Image("bilder/hjem.jpg", { x: 200, y: 150, width: 100, height: 100 });
     const img9 = new Blocks.Image("bilder/slem.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const sound15 = new Blocks.Sound("lyder/sporsmal12.m4a", { loop: false, auto: false });
-    sound15.start();
-    Actions.Click(txt7, () => {
-        sound15.start()
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound15.start();
     })
 
 
@@ -534,9 +543,9 @@ function oppgave13() {
     const img8 = new Blocks.Image("bilder/bake.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const img9 = new Blocks.Image("bilder/smakt.jpg", { x: 200, y: 150, width: 100, height: 100 });
     const sound15 = new Blocks.Sound("lyder/sporsmal13.m4a", { loop: false, auto: false });
-    sound15.start();
-    Actions.Click(txt7, () => {
-        sound15.start()
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound15.start();
     })
 
 
@@ -568,9 +577,9 @@ function oppgave14() {
     const img9 = new Blocks.Image("bilder/smakt.jpg", { x: 200, y: 150, width: 100, height: 100 });
     const img16 = new Blocks.Image("bilder/rake.jpg", { x: 80, y: 150, width: 100, height: 100 });
     const sound17 = new Blocks.Sound("lyder/sporsmal14.m4a", { loop: false, auto: false });
-    sound17.start();
-    Actions.Click(txt7, () => {
-        sound17.start()
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound17.start();
     })
 
 
@@ -604,6 +613,9 @@ function hurra() {
     const img18 = new Blocks.Image("bilder/hurra.jpg", { x: 80, y: 50, width: 300, height: 150 });
     const txt19 = new Blocks.Text("HURRA!!", { style: "hurraText", x: 80, y: 200, width: 1600, height: 1000 });
     const sound20 = new Blocks.Sound("lyder/hurra.m4a", { loop: false, auto: false });
-    sound20.start();
+    const speaker = new Blocks.Image("bilder/speaker.png", { x: 550, y: 10, width: 100, height: 100 });
+    Actions.Click(speaker,()=>{
+        sound20.start();
+    })
 
 }
