@@ -389,12 +389,13 @@ Actions.Click(img12, () => {
 function oppgave9() {
 
     // Å gjøre: Gi bedre navn til alle tingene.
-
+    
     const txt7 = new Blocks.Text("Vi går gjennom portalen i den magiske hekken og kommer til en ...", { style: "tekst", x: 20, y: 10, width: 300, height: 50 });
     const img8 = new Blocks.Image("bilder/hule.jpg", { x: 200, y: 150, width: 110, height: 100 });
     const img9 = new Blocks.Image("bilder/kule.jpg", { x: 80, y: 150, width: 110, height: 100 });
     const img12 = new Blocks.Image("bilder/gule.jpg", { x: 320, y: 150, width: 100, height: 100 });
     const sound13 = new Blocks.Sound("lyder/sporsmal9.m4a", { loop: false, auto: false });
+
     sound13.start();
     Actions.Click(txt7, () => {
         sound13.start()
